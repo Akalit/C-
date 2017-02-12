@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1486404563 source:e:\kb\8.2\main.cpp
+	<iostream>
+	<conio.h>
+	<ctime>
+	<stdlib.h>
+

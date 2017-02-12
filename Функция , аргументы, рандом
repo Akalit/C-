@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+
+void rand (int * mas, int size);
+void showmas (int * mas, int size);
+using namespace std;
+int main()
+{
+	int size;
+	cin >> size;
+	
+	int *mas = new int [size];
+
+	rand (mas,size);
+    showmas(mas, size);
+
+	delete[] mas; 
+	_getch();
+}
+
+
+void rand(int * mas, int size)
+{
+	srand (time(NULL));
+	for (int q =0 ; q < size ; q++)
+	mas [q] = rand () % 20;
+}
+
+
+void showmas(int * mas, int size)
+{
+for (int q =0 ; q < size ; q++)
+cout << " " << mas [q] << endl;
+}
